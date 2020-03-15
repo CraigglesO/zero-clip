@@ -1,6 +1,6 @@
 {
   "name": "zero-clip",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Viciously fast and efficient triangle mesh generator.",
   "main": "lib/index.js",
   "scripts": {
