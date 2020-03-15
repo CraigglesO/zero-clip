@@ -6,7 +6,6 @@ function zeroClip (polygon, offset = 0) {
   // prep & store the anchor
   let indexPos = 1
   let i, rl
-  vertices.push(0, 0)
 
   // run through every point and create a triangle from the anchor
   for (const ring of polygon) {
@@ -14,7 +13,7 @@ function zeroClip (polygon, offset = 0) {
     for (i = 0; i < rl; i++) {
       // store next vertex and set
       vertices.push(...ring[i])
-      indices.push(0, indexPos + offset, indexPos + offset + 1) // first position is the anchor
+      indices.push(offset, indexPos + offset, indexPos + offset + 1) // first position is the anchor
       indexPos++
     }
     // store the last point
@@ -25,7 +24,7 @@ function zeroClip (polygon, offset = 0) {
   return { vertices, indices }
 }
 
-function zeroClipDiv (polygon, divisor = 0, offset = 0) {
+function zeroClipDiv (polygon, modulo = 0, offset = 0) {
 
 }
 

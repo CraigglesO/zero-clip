@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { zeroClip } = require('./lib')
+const { zeroClip, zeroClipDiv } = require('./lib')
 
 const squares = [
   [
@@ -30,6 +30,7 @@ console.time('test')
 
 allCoords.forEach(coords => {
   const data = zeroClip(coords, vertices.length / 2)
+  // const data = zeroClipDiv(coords, 4096 / 8, vertices.length / 2)
   vertices.push(...data.vertices)
   indices.push(...data.indices)
 })
