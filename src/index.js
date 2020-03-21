@@ -25,9 +25,4 @@ function zeroClip (polygon, offset = 0) {
   return { vertices, indices }
 }
 
-function zeroClipDiv (polygon, modulo = 0, offset = 0) {
-
-}
-
 exports.zeroClip = zeroClip
-exports.zeroClipDiv = zeroClipDiv
