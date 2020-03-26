@@ -25,4 +25,4 @@ function zeroClip (polygon, offset = 0) {
   return { vertices, indices }
 }
 
-exports.zeroClip = zeroClip
+exports.default = exports.zeroClip = zeroClip
